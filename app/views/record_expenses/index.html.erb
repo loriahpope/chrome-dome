@@ -1,0 +1,33 @@
+<h1>All Recorded Expenses:</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Location</th>
+      <th>Item Purchased</th>
+      <th>Amount</th>
+      <th>Payment Type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @record_expenses.each do |record_expense| %>
+      <tr>
+        <td><%= record_expense.date %></td>
+        <td><%= record_expense.location %></td>
+        <td><%= record_expense.purchaseDescription %></td>
+        <td><%= record_expense.amount %></td>
+        <td><%= record_expense.paymentDescription %></td>
+        <td class="show modify"><%= link_to 'Show', record_expense %></td>
+        <td class="edit modify"><%= link_to 'Edit', edit_record_expense_path(record_expense) %></td>
+        <td class="destory modify"><%= link_to 'Destroy', record_expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'record a new expense', new_record_expense_path %>

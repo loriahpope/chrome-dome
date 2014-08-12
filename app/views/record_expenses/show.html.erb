@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @record_expense.date %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @record_expense.location %>
+</p>
+
+<p>
+  <strong>Item Purchased:</strong>
+  <%= @record_expense.purchaseDescription %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @record_expense.amount %>
+</p>
+
+<p>
+  <strong>Payment Type:</strong>
+  <%= @record_expense.paymentDescription %>
+</p>
+
+<%= link_to 'Edit this Expense', edit_record_expense_path(@record_expense) %> |
+<%= link_to 'Home', record_expenses_path %>

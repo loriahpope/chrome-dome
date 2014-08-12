@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2014-08-12
+  location: MyString
+  purchaseDescription: MyString
+  amount: 9.99
+  paymentDescription: MyString
+
+two:
+  date: 2014-08-12
+  location: MyString
+  purchaseDescription: MyString
+  amount: 9.99
+  paymentDescription: MyString
