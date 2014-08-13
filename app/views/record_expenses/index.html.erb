@@ -8,7 +8,7 @@
       <th>Item Purchased</th>
       <th>Amount</th>
       <th>Payment Type</th>
-      <th colspan="3"></th>
+      <th colspan="3" class="modifyHead"></th>
     </tr>
   </thead>
 
@@ -20,11 +20,28 @@
         <td><%= record_expense.purchaseDescription %></td>
         <td><%= record_expense.amount %></td>
         <td><%= record_expense.paymentDescription %></td>
-        <td class="show modify"><%= link_to 'Show', record_expense %></td>
-        <td class="edit modify"><%= link_to 'Edit', edit_record_expense_path(record_expense) %></td>
-        <td class="destory modify"><%= link_to 'Destroy', record_expense, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="modify">
+          <!--<%= link_to 'Show', record_expense %>-->
+          <%= link_to 'Edit', edit_record_expense_path(record_expense) %>
+          <%= link_to 'Delete', record_expense, method: :delete, data: { confirm: 'Are you sure?' } %> </td></div>
       </tr>
     <% end %>
+
+    <tr>
+      <td colspan="6" class="blank"> </td>
+    </tr>
+
+    <tr>
+      <td colspan="4" class="total"> Total: </td>
+       <td class="sum"><%= 
+
+        def say_hello(name = "yo")
+          "Hello, #{name}."
+        end
+
+       %></td>
+
+    </tr>
   </tbody>
 </table>
 

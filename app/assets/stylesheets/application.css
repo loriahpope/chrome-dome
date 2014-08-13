@@ -19,7 +19,7 @@ body{
 }
 
 .rubyBudget{
-	background-color: rgba(256, 256, 256, 0.75);
+	background-color: rgba(77, 156, 255, 0.44);
 	width: 700px;
 	margin: 0 auto;
 	border-radius: 14px;
@@ -37,3 +37,57 @@ table{
 	text-align: left;
 	margin: 0 auto;
 }
+
+td{
+	width: 200px;
+	height: 20px;
+	background-color: rgba(255, 255, 255, 0.51);
+	border-radius: 5px;
+	color: #868686;
+	text-align: center;
+	padding: 0px 16px;
+}
+
+.blank{
+	background-color: inherit;
+}
+
+td.modify{
+	padding: 3px;
+	width: 26px;
+	background-color: inherit;
+}
+
+td.modify a{
+	text-decoration: none;
+	font-size: 10px;
+	display: block;
+	line-height: 10px;
+	text-align: left;
+}
+
+td.modify a:hover{
+	text-decoration: underline;
+}
+
+th{
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
+	border-bottom: 1px solid;
+	padding-bottom: 0px;
+}
+
+.modifyHead{
+	border: none;
+}
+
+.total{
+	text-align: right;
+	background-color: inherit;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
