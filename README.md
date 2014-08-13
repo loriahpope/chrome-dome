@@ -41,7 +41,7 @@ Then type rake db:migrate into your Terminal and type rails server again to rest
 First, just go ahead and open up that entire new folder that was created into your text editor. The files I've been working with primarily are:
 chrome-dome > stylesheets > record_expenses.css.scss (This is where you'll write all the CSS for this page. If you save and refresh, you should see the changes immediately.)
 
-chrome-dome > views > layouts > application.html.erb, where *erb* stands for **E**mbedded **R**u**b**y (I think), so it's basically just an HTML file that includes Ruby, as evidenced by the <%= %>, which is where all of your inline Ruby hubub goes. (Like "<script></script>")
+chrome-dome > views > layouts > application.html.erb, where *erb* stands for Embedded Ruby (I think), so it's basically just an HTML file that includes Ruby, as evidenced by the <%= %>, which is where all of your inline Ruby hubub goes. (Like "<script></script>")
 There's not too much going on here, but I did add a div class of "rubyBudget" around the yield ruby script that was already there so I could find it in my CSS. 
 
 chrome-dome > views > record_expenses
