@@ -52,6 +52,7 @@ I haven't really used too many of the other files, but I did add something calle
 I added this file because I have no idea who writes their dates like "YYYY-MM-DD", and I wanted to change the format of the Date and Time. All this looks like is:
 >Date::DATE_FORMATS[:default]="%m/%d/%y"
 >Time::DATE_FORMATS[:default]="%m/%d/%y %H:%M"
+
 , where the % grabs information stored in that variable (m, d, y, H, M) created when a new form submission is made and the lowercase m, d, and y are two-digit months, days, and years. 
 
 ####MORE SOON! 
