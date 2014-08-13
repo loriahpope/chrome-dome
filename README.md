@@ -39,19 +39,20 @@ Then type rake db:migrate into your Terminal and type rails server again to rest
 ###Okay, onto what I'm actually doing:
 
 First, just go ahead and open up that entire new folder that was created into your text editor. The files I've been working with primarily are:
-chrome-dome > stylesheets > record_expenses.css.scss (This is where you'll write all the CSS for this page. If you save and refresh, you should see the changes immediately.)
+**chrome-dome > stylesheets > record_expenses.css.scss** (This is where you'll write all the CSS for this page. If you save and refresh, you should see the changes immediately.)
 
-chrome-dome > views > layouts > application.html.erb, where *erb* stands for Embedded Ruby (I think), so it's basically just an HTML file that includes Ruby, as evidenced by the <%= %>, which is where all of your inline Ruby hubub goes. (Like "<script></script>")
+**chrome-dome > views > layouts > application.html.erb**, where *erb* stands for Embedded Ruby (I think), so it's basically just an HTML file that includes Ruby, as evidenced by the <%= %>, which is where all of your inline Ruby hubub goes.
 There's not too much going on here, but I did add a div class of "rubyBudget" around the yield ruby script that was already there so I could find it in my CSS. 
 
-chrome-dome > views > record_expenses
+**chrome-dome > views > record_expenses**
 I've used almost every file in here so far, but primarily index.html.erb, because that's the main markup of the page. I modified some of the column headers and added a Total column, and I'm currently trying to figure out how to sum up the objects in the "amount" column.
 
-I haven't really used too many of the other files, but I did add something called "formats.rb" to config > initializers. Anything you modify in this directory will only be reflected if you quit the server in terminal (Ctrl+C) and then restart it using rails server.
+I haven't really used too many of the other files, but I did add something called "formats.rb" to **config > initializers**. Anything you modify in this directory will only be reflected if you quit the server in terminal (Ctrl+C) and then restart it using rails server.
 
 I added this file because I have no idea who writes their dates like "YYYY-MM-DD", and I wanted to change the format of the Date and Time. All this looks like is:
-Date::DATE_FORMATS[:default]="%m/%d/%y"
-Time::DATE_FORMATS[:default]="%m/%d/%y %H:%M", where the % grabs information stored in that variable (m, d, y, H, M) created when a new form submission is made and the lowercase m, d, and y are two-digit months, days, and years. 
+>Date::DATE_FORMATS[:default]="%m/%d/%y"
+>Time::DATE_FORMATS[:default]="%m/%d/%y %H:%M"
+, where the % grabs information stored in that variable (m, d, y, H, M) created when a new form submission is made and the lowercase m, d, and y are two-digit months, days, and years. 
 
 ####MORE SOON! 
 
