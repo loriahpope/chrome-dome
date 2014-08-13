@@ -13,13 +13,15 @@
 
 -[Team Treehouse](http://teamtreehouse.com/library/build-a-simple-ruby-on-rails-application)
 
-####And then I realized I had to actually install Ruby and Rails on my Machine. I'm using Mac OSX Mavericks, so the installation tutorial in Rails for Zombies wasn't actually helpful
+#####And then I realized I had to actually install Ruby and Rails on my Machine. I'm using Mac OSX Mavericks, so the installation tutorial in Rails for Zombies wasn't actually helpful to me.
 
 [This tutorial](https://gorails.com/setup/osx/10.9-mavericks) was pretty much all I needed to get started, although the following links were helpful as well:
 
-(http://guides.rubyonrails.org/getting_started.html)
-(http://brettu.com/ruby-ruby-tips-217-installing-rails-4-0-0-on-ruby-2-0-0-p247/)
-(http://12devs.co.uk/articles/writing-a-web-application-with-ruby-on-rails/)
+[guides.rubyonrails.org](http://guides.rubyonrails.org/getting_started.html)
+
+[brettu.com](http://brettu.com/ruby-ruby-tips-217-installing-rails-4-0-0-on-ruby-2-0-0-p247/)
+
+[12devs.co.uk](http://12devs.co.uk/articles/writing-a-web-application-with-ruby-on-rails/)
 
 The tutorial I used sort of walks you through how to start a new project, but I'll just reiterate it:
 In Terminal, after you've finished all the installations, type **rails new name -d mysql**, where name is the name of your new Rails application.
