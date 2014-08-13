@@ -31,7 +31,8 @@ Create the new database to store all of your information by typing rake db:creat
 Finally, to start the server, just type **rails server**. You'll get the new address of your database, but it's typically http://0.0.0.0:3000. 
 
 Of course, nothing will be there yet. So press Ctrl+C to stop the server, and create your database. You'll do this by typing: rails generate scaffold **name of new database** and then the headers of each column followed by a colon and its respective data type. 
-When starting this project, I typed: **rails generate scaffold recordExpenses date:date location:string purchaseDescription:string amount:decimal paymentType:string**
+When starting this project, I typed: 
+>**rails generate scaffold recordExpenses date:date location:string purchaseDescription:string amount:decimal paymentType:string**
 
 
 Then type rake db:migrate into your Terminal and type rails server again to restart the server. When you reload the page, add **/name of new database** to the URL, and you should see your new database! For example, my new URL would be **http://0.0.0.0:3000/record_expenses**
